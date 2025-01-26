@@ -6,6 +6,8 @@ def findingthebignumber(n1, n2):
         print("n2 is the biggest number")
     else:
         print("Both numbers are equal")
+   # giving the exeception handling   
+   # giving the float  vriable to find the number of elements in numbers  
 try:
     n1=float(input("enter the first number") )   
     n2=float(input("enter the second number") )
