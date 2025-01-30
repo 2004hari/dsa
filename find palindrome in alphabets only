@@ -1,0 +1,18 @@
+def is_palindrome(s):
+    # creting the emty list 
+    cleaned = []
+    
+    for char in s:
+        #  uppercase to lowercase
+        char = char.lower()
+        
+        # Check  is a letter or digit
+        if ('a' <= char <= 'z') or ('0' <= char <= '9'):
+            cleaned.append(char)  # Store valid characters
+
+    
+    return cleaned == cleaned[::-1] 
+
+print(is_palindrome("A man, a plan, a canal: Panama"))  # Output: True
+print(is_palindrome("race a car"))                      # Output: False
+
