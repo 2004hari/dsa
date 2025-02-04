@@ -1,5 +1,6 @@
 def stupid_number(n,l):
-    letter= "abcdefghijklmnopqrstuvwxyz"
+    latter="qwertyuiopasdfghjklzxcvbnm"
+    
     passwords =  []
     for  char1 in range (1,n+1):
         for char2 in range (1,n+1):
@@ -7,7 +8,7 @@ def stupid_number(n,l):
                 for  char4 in range (l):
                     for char5 in range (1,n+1):
                         if char5 > char1 and char5 > char2:
-                            password= str(char1) +str(char2) +str(char3) +str(char4) +str(char5)
+                            password= str(char1) +str(char2) +latter[char3] +latter[char4] +str(char5)
                             passwords. append(password)
                             print (" ".join(passwords))                            
 l = int(input(" entert the number "))                            
